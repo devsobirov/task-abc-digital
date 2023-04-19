@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
 
             $table->unsignedBigInteger('catalogue_id');
-            $table->foreign('cataloge_id')
+            $table->foreign('catalogue_id')
                 ->references('id')->on('catalogues')
                 ->cascadeOnDelete();
 
